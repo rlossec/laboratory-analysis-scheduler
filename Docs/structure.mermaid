@@ -1,0 +1,31 @@
+classDiagram
+    %% ==========================================
+    %% COUCHE DOMAINE - ENTITÉS
+    %% ==========================================
+    class Sample {
+        <<entity>>
+        - id : string
+        - priority: string
+        - analysis_type: string
+        - analysis_time: int
+        - arrival_time: datetime
+    }
+    
+    class Technician {
+		    <<entity>>
+		    - id: string
+		    - specialty: list['str']
+		    - efficiency: float
+		    + start_time: datetime
+		    + end_time: datetime
+		    + lunch_break_start_time: datetime
+		    + lunch_break_end_time: datetime
+    }
+    
+    class Equipment {
+		    <<entity>>
+		    - id: string
+		    - type: string
+		    - capacity: int
+		    - cleaning_time: int
+    }
