@@ -6,7 +6,7 @@ def planify_lab():
     # 1. Récupérer les données (Samples, Technicians, Equipments)
 
     # 2. Planifier les analyses
-
+    
     # 3. Retourner le planning
     pass
 
